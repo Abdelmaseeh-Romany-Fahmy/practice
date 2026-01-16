@@ -12,7 +12,7 @@ class Register extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.indigo,
          title: Text("practice"),
       ),
       body: Column(
