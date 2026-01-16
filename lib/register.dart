@@ -13,7 +13,7 @@ class Register extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo,
-         title: Text("practice"),
+         title: Text("practices"),
       ),
       body: Column(
         children: [

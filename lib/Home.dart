@@ -10,7 +10,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
    ModelController modelController= ModalRoute.of(context)!.settings.arguments as ModelController;
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text("sssss"),),
       body: Column(
         children: [
           Padding(
