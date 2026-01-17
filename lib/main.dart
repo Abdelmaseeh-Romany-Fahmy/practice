@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:practice/register.dart';
 
+import 'anatharscreen.dart';
 import 'home.dart';
 
 void main() {
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         Register.routName:(_)=>Register(),
         Home.routName:(_)=>Home(),
+        Anatherscreen.routName:(_)=>Anatherscreen(),
       },
       initialRoute: Register.routName,
     );

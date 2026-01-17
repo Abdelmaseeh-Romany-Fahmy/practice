@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:practice/home.dart';
 
-class Register extends StatelessWidget {
+class Anatherscreen extends StatelessWidget {
   TextEditingController nameController =TextEditingController();
   TextEditingController EmailController =TextEditingController();
 
-  static String routName ="Register";
-   Register({super.key});
+  static String routName ="Anatherscreen";
+  Anatherscreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo,
-         title: Text("practices"),
+        title: Text("practices"),
       ),
       body: Column(
         children: [
@@ -25,16 +25,16 @@ class Register extends StatelessWidget {
               decoration:
 
               InputDecoration(
-                focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.blue)
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.red)
-                ),
+                  focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.blue)
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.red)
+                  ),
 
-                hintText: "Name",
-                border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
-                 label: Text("Name")
+                  hintText: "Name",
+                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
+                  label: Text("Name")
               ),
             ),
 
@@ -64,7 +64,7 @@ class Register extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child:
             ElevatedButton(onPressed: (){
-Navigator.of(context).pushNamed(Home.routName,arguments:ModelController(name: nameController.text,Email: EmailController.text ) );
+              Navigator.of(context).pushNamed(Home.routName,arguments:ModelControllers(name: nameController.text,Email: EmailController.text ) );
             }, child: Text("add")),
           )
 
@@ -73,11 +73,11 @@ Navigator.of(context).pushNamed(Home.routName,arguments:ModelController(name: na
     );
   }
 }
-class ModelController{
+class ModelControllers{
   String name;
   String Email;
 
-  ModelController({required this.name, required this.Email});
+  ModelControllers({required this.name, required this.Email});
 
 
 }
