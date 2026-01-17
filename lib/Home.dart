@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practice/anatharscreen.dart';
 import 'package:practice/register.dart';
 
 class Home extends StatelessWidget {
@@ -8,9 +9,9 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   ModelController modelController= ModalRoute.of(context)!.settings.arguments as ModelController;
+    ModelController modelController= ModalRoute.of(context)!.settings.arguments as ModelController;
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text("ssassbs"),),
       body: Column(
         children: [
           Padding(
@@ -21,6 +22,10 @@ class Home extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Text("Email =>${modelController.Email}"),
           ),
+          ElevatedButton(onPressed: (){
+            Navigator.of(context).pushNamed(Anatherscreen.routName);
+          }, child: Text("add")),
+
 
         ],
       ),
